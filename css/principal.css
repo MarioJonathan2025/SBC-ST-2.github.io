@@ -1,0 +1,82 @@
+/*========================== CABEZA Y CUERPO ==========================*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #e6e6e6;
+}
+
+header, .main, footer{
+    background: #fff;
+    width: 90%; /* NO HACE NADA PERO ESTA EN EL PDF*/
+    max-width: 1000px;
+    margin: 20px auto; /* EL AUTO es para izquierda y derecha y se acomoda automaticamente*/
+}
+
+/*========================== BARRA MENU ==========================*/
+nav{
+    background: #ff5e00;
+    overflow: hidden; /*El contenido que excede se oculta y no aparece ni con barras de scroll*/
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    float: left; /*flotará a la izquierda y el contenido siguiente fluirá a su derecha*/
+}
+
+nav ul li a{
+    padding: 10px 20px;
+    display: block; /*El elemento ocupará todo el ancho disponible de su contenedor padre, que es el nav*/
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    background: black;
+}
+
+/*========================== TEXTO ==========================*/
+.main .articles{
+    width: 68.5%;
+    margin-right: 1.5%; /*El porcentaje del margen se refiere siempre al ancho del contenedor padre.*/
+    float: left;
+}
+
+.main .articles article{
+    padding: 20px;
+    background: #fff;
+    margin-bottom: 20px; /* CREO QUE NO HACE NADA PERO ESTA EN EL PDF*/
+}
+
+p, li{
+    font-size: 20px;
+}
+
+/*========================== PANEL DERECHO ==========================*/
+aside{
+    width: 30%;
+    background: #f5f3f3;
+    float: left;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+aside img{
+    display: block;/*Convertido a bloque*/
+    margin: 0 auto;
+}
+
+/*========================== PIE DE PAGINA ==========================*/
+footer{
+    background-color: #ff5e00;
+    color: #fff;
+    clear: both;
+    padding: 10px 0px;
+    text-align: center;
+}
