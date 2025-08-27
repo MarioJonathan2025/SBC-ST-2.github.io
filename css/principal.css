@@ -14,11 +14,18 @@ header, .main, footer{
     max-width: 1000px;
     margin: 20px auto; /* EL AUTO es para izquierda y derecha y se acomoda automaticamente*/
 }
+/*========================== IMAGEN DINO ==========================*/
+.dino{
+    display: flex;
+    justify-content: center; /* centra horizontalmente */
+}
 
 /*========================== BARRA MENU ==========================*/
 nav{
+    display: flex;
     background: #ff5e00;
     overflow: hidden; /*El contenido que excede se oculta y no aparece ni con barras de scroll*/
+    justify-content: center;
 }
 
 nav ul{
@@ -62,21 +69,23 @@ aside{
     width: 30%;
     background: #f5f3f3;
     float: left;
+    padding: 10px;
     margin-bottom: 20px;
-    padding: 20px;
     box-sizing: border-box;
 }
 
-aside img{
-    display: block;/*Convertido a bloque*/
-    margin: 0 auto;
+aside marquee img{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
 }
 
 /*========================== PIE DE PAGINA ==========================*/
 footer{
     background-color: #ff5e00;
     color: #fff;
-    clear: both;
+    clear: both; /* indica que el elemento no debe aparecer ni a la izquierda ni a la derecha de ningún elemento 
+    flotante previo, sino que debe colocarse debajo de todos ellos.*/
     padding: 10px 0px;
     text-align: center;
 }
