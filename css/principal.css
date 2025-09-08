@@ -6,10 +6,12 @@
 
 body{
     background: #e6e6e6;
+    font-family: "Livvic", sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
 
-header, .main, footer{
-    background: #fff;
+header, .main, .mappa, footer{
     width: 90%; /* NO HACE NADA PERO ESTA EN EL PDF*/
     max-width: 1000px;
     margin: 20px auto; /* EL AUTO es para izquierda y derecha y se acomoda automaticamente*/
@@ -18,6 +20,8 @@ header, .main, footer{
 .dino{
     display: flex;
     justify-content: center; /* centra horizontalmente */
+
+    mix-blend-mode: multiply;/*para borrar fondo blanco de imagen*/
 }
 
 /*========================== BARRA MENU ==========================*/
@@ -26,10 +30,13 @@ nav{
     background: #ff5e00;
     overflow: hidden; /*El contenido que excede se oculta y no aparece ni con barras de scroll*/
     justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px rgb(134, 134, 134);
 }
 
 nav ul{
     list-style: none;
+
 }
 
 nav ul li{
@@ -41,6 +48,7 @@ nav ul li a{
     display: block; /*El elemento ocupará todo el ancho disponible de su contenedor padre, que es el nav*/
     color: #fff;
     text-decoration: none;
+    font-weight: 400;
 }
 
 nav ul li a:hover{
@@ -62,6 +70,16 @@ nav ul li a:hover{
 
 p, li{
     font-size: 20px;
+    list-style-position: inside;/* viñeta esté incluida dentro del área del texto,*/
+}
+
+.articles{
+    border-radius: 30px;
+}
+
+article, aside{
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px rgb(134, 134, 134);
 }
 
 /*========================== PANEL DERECHO ==========================*/
@@ -72,6 +90,7 @@ aside{
     padding: 10px;
     margin-bottom: 20px;
     box-sizing: border-box;
+    text-align: center;
 }
 
 aside marquee img{
@@ -80,12 +99,31 @@ aside marquee img{
     margin-right: 20px;
 }
 
+/*========================== MAPPA ==========================*/
+.mappa h2{
+    background-color: #ff5e00;
+    color: #fff;
+    font-weight: 400;
+    clear: both;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px rgb(134, 134, 134);
+}
+
+.mappa iframe{
+    width: 100%;
+    border-radius: 20px;
+}
 /*========================== PIE DE PAGINA ==========================*/
 footer{
     background-color: #ff5e00;
     color: #fff;
+    font-weight: 400;
     clear: both; /* indica que el elemento no debe aparecer ni a la izquierda ni a la derecha de ningún elemento 
     flotante previo, sino que debe colocarse debajo de todos ellos.*/
     padding: 10px 0px;
     text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px rgb(134, 134, 134);
 }
