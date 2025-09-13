@@ -21,4 +21,166 @@ header{
     background-image: url(../img/img-saldi/portada.png);
     height: 600px;
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;/*en el pdf del profe usaba background-attachment: cover; al parecer cambio segun IA*/
+}
+
+/*======================= BARRA MENU ==========================*/
+header .menu{
+    margin: 30px 0;
+    display: flex;
+    justify-content: flex-end; /*cambio de posicion hacla la derecha*/
+    flex-wrap: wrap; /*elementos dentro de un contenedor flexible (flex container) puedan envolverse en varias 
+    líneas si no caben en una sola línea*/
+}
+
+header .menu a{
+    font-size: 18px;
+    font-family: 'Livvic';
+    font-weight: 300;
+    display: inline-block;/*comporta como un elemento en línea, es decir, se coloca en la misma línea que 
+    otros elementos si hay espacio disponible*/
+    padding: 10px 0;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header .menu a:hover{
+    text-decoration: underline;/*pone sublinea al pasar el mouse encima de cada elemento*/
+}
+
+/*======================= Informazione sotto il menu ========================*/
+header .contenido-header{
+    margin: 120px 0;
+    display: flex;/*elementos hijos dentro de ese contenedor (llamados ítems flexibles) se alineen y distribuyan 
+    de manera eficiente a lo largo de un eje, ya sea horizontal o vertical.*/
+    flex-direction: column;
+    flex-wrap: wrap; /*elementos dentro de un contenedor flexible (flex container) puedan envolverse en varias 
+    líneas si no caben en una sola línea*/
+    justify-content: center;/*Por defecto, el eje principal es horizontal, por lo que esta propiedad alinea los 
+    elementos horizontalmente en el centro del contenedor.*/
+    align-items: center;/*Por defecto, este eje es vertical, por lo que esta propiedad alinea los elementos 
+    verticalmente en el centro del contenedor.*/
+}
+
+header .contenido-header .titulo-header{
+    font-size: 80px;
+    text-align: center;
+    color: #fff;
+    text-align: center;
+}
+
+/*============== linea divisoria ==============*/
+header .contenido-header .linea-header{
+    width: 700px;
+    margin: auto;
+    height: 2px;
+    background: #15a4fa;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+header .contenido-header .texto-header{
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+header .contenido-header .action-header{
+    display: inline-block;
+    margin: auto;
+    color: #fff;
+    text-decoration: none;
+    border:  1px solid #15a4fa;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+header .contenido-header .action-header:hover{
+    background: #15a4fa;
+    color: #fff;
+}
+
+/*------------ Primo contenuto principale ------------*/
+main .quienes{
+    background: #f0f3f5;
+    padding: 60px 0;
+}
+
+main .quienes .quienes-titulo{
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main .quienes .quienes-parrafo{
+    text-align: center;
+    color: #999999;
+    font-weight: 600;
+}
+
+/*------------ Cosa faciamo? ------------*/
+main .quehacemos{
+    margin: 60px 0;
+}
+
+main .contenido-cajas{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main .quehacemos .contenido-cajas .tarjeta{
+    width: 30%;
+    text-align: center;
+}
+
+main .quehacemos .contenido-cajas .tarjeta .contenido-tarjeta .titulo-tarjeta{
+    margin: 10px 0;
+}
+
+/*----------- PORTFOLIO -----------*/
+main .portafolio{
+    background: #f0f3f5;
+    padding: 60px 0;
+}
+
+main .portafolio .portafolio-textos{
+    text-align: center;
+    margin-bottom: 60px;
+    color: #2d3950;
+    font-size: 20px;
+}
+
+main .portafolio .portafolio-textos p{
+    color: #909090;
+    font-size: 15px;
+    margin: 20px 0 0 0;
+}
+
+main .portafolio .galeria{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;/*elementos dentro de un contenedor flexible (flex container) puedan envolverse en varias 
+    líneas si no caben en una sola línea*/
+}
+
+main .portafolio .galeria .fotos{
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+main .portafolio .galeria .fotos img{
+    width: 100%;
+    height: 210px;
+    border-radius: 5px;
+}
+
+main .portafolio .galeria .fotos img:hover{
+    opacity: 0.6;
+    cursor: pointer;
 }
