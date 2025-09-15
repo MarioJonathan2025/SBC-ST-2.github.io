@@ -52,7 +52,7 @@ header .menu a:hover{
 
 /*======================= Informazione sotto il menu ========================*/
 header .contenido-header{
-    margin: 120px 0;
+    margin: 60px 0;
     display: flex;/*elementos hijos dentro de ese contenedor (llamados ítems flexibles) se alineen y distribuyan 
     de manera eficiente a lo largo de un eje, ya sea horizontal o vertical.*/
     flex-direction: column;
@@ -183,4 +183,186 @@ main .portafolio .galeria .fotos img{
 main .portafolio .galeria .fotos img:hover{
     opacity: 0.6;
     cursor: pointer;
+}
+
+/*-------------------------------- piè di pagina --------------------------------*/
+footer .contacto{
+    height: 600px;
+    background-image: url(../img/img-saldi/footer.png);
+    background-position: center;
+    padding: 60px 0;
+}
+
+footer .footer-textos{
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+}
+
+footer .footer-textos p{
+    font-size: 14px;
+    margin: 15px 0 30px 0;
+    color: #999999;
+}
+
+/*---------------- modulo o formulario ----------------*/
+form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 70%;
+}
+
+footer .contacto input[type="text"], footer .contacto input[type="email"], footer .contacto textarea{
+    width: 100%;
+    margin: 5px 0;
+    padding: 15px 20px;
+    background: none;
+    border-radius: 10px;
+    color: rgb(204, 204, 204);
+    border: 2px solid rgba(204, 204, 204, 0.383);
+    font-family: 'Livvic';
+    font-weight: 300;
+}
+
+footer .contacto textarea{
+    height: 150px;
+    max-height: 150px;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 150px;
+    /*segun informacion, estos formatos "max- o min son muy necesarios para el responsive*/
+}
+
+.derecha{
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .contacto input[type="submit"]{
+    display: block;
+    width: 100px;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background: none;
+    border: 1px solid #15a4fa;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+}
+
+footer .contacto input[type="submit"]:hover{
+    background: #15a4fa;
+    color: #fff;
+}
+
+.footer{/*No hay ningun parametro ".footer" en el codigo html pero igual lo ponemos*/
+    height: 200px;
+    background: #000;
+}
+
+/*=========================== R E S P O N S I V E =============================*/
+@media screen AND (max-width: 760px) {
+    /*============ CABECERA ============*/
+    header{
+        height: 550px;
+    }
+
+    header .menu{
+        justify-content: center;
+    }
+
+    header .contenido-header{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    /*========= "Saldi di supporto tecnico" =========*/
+    header .contenido-header .titulo-header{
+        justify-content: center;
+        font-size: 60px;
+    }
+
+    /*========= "Servizi di tecnologici" =========*/
+    header .contenido-header .texto-header{
+        font-size: 18px;
+    }
+
+    header .contenido-header .texto-header .desaparecer{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    /*=========== "Saldi di Supporto Tecnico" ================*/
+    header{
+        height: 450px;
+    }
+    
+    header .contenido-header{
+        margin-top: -10px;
+    }
+
+    header .contenido-header .titulo-header{
+        font-size: 55px;
+        
+    }
+
+    header .contenido-header .linea-header{
+        width: 400px;
+    }
+
+    /*=========== "Galleria di fotos" ================*/
+    main .portafolio .galeria .fotos{
+        width: 49%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /*=========== "Saldi di Supporto Tecnico" ================*/
+    header{
+        height: 400px;
+    }
+
+    header .contenido-header .titulo-header{
+        font-size: 40px;
+    }
+
+    /*------------ Cosa faciamo? ------------*/
+    main .quehacemos .contenido-cajas .tarjeta{
+        width: 48%;
+        margin: 20px 0;
+    }
+
+    /*-- Carta 1 --*/
+    main .contenido-cajas{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    /*------------ Cosa faciamo? ------------*/
+    header{
+        height: 450px;
+    }
+
+    header .contenido-header{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    header .contenido-header .titulo-header{
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+
+    main .quehacemos .contenido-cajas .tarjeta{
+        width: 98%;
+    }
+
+    /*========= "Servizi di tecnologici" =========*/
+    header .contenido-header .texto-header{
+        font-size: 15px;
+    }
 }
