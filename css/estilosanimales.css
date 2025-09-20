@@ -12,8 +12,9 @@
 }
 
 body{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Livvic', sans-serif;
 }
+
 
 header{
 	width: 100%;
@@ -36,6 +37,7 @@ h1{
 	float: left;
 }
 
+
 header .contenedor{
 	display: table;
 }
@@ -46,9 +48,12 @@ section{
 	margin-bottom: 25px;
 }
 
+
 #bienvenidos{
 	text-align: center;
 }
+
+
 
 footer .contenedor{
 	display: flex;
@@ -56,6 +61,8 @@ footer .contenedor{
 	justify-content: center;
 	padding-bottom: 20px;
 }
+
+
 
 .copy{
 	font-size: 20px;
@@ -111,8 +118,12 @@ header label{
 	transform: translateX(0%);
 }
 
-#blog h3,h4{
+#blog h3, h4{
 	text-align: center;
+}
+
+#blog h4{
+	font-size: 14px;
 }
 
 #blog .contenedor{
@@ -191,7 +202,8 @@ header label{
 }
 
 
-/* Inicio de los media querie*/
+/*---------- Inizio dei media querie ---------*/
+
 @media (min-width: 1024px){
 	.contenedor{
 		width: 1000px;
@@ -231,12 +243,14 @@ header label{
 	.info-pet{
 		width: 40%;
 	}
+
 }
 
 @media (min-width:1024px){
 	.info-pet{
 		width: auto;
 	}
+
 }
 
 @media (min-width: 480px){
