@@ -134,6 +134,7 @@ header label{
 
 #blog article{
 	margin: 15px;
+	text-align: center; /* para centrar imagenes con parrafos*/
 }
 
 #blog img{
