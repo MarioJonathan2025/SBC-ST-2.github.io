@@ -60,6 +60,7 @@ footer .contenedor{
 	flex-wrap: wrap;
 	justify-content: center;
 	padding-bottom: 20px;
+	align-items: center;
 }
 
 
