@@ -25,8 +25,6 @@ header{
 	left: 0;
 	top: 0;
 	z-index: 100;
-
-
 }
 
 .contenedor{
@@ -172,7 +170,7 @@ header label{
 }
 
 #banner h2{
-	font-size: 20px;
+	font-size: 30px;
 }
 
 #banner a{
@@ -250,10 +248,12 @@ header label{
 		height: 300px;
 		overflow: hidden;
 	}
+
 }
 
 /*---------- 768PX ---------*/
-@media (min-width: 768px){
+@media (min-width: 768px) and (max-width: 1023px){
+
 	.sociales{
 		width: auto;
 	}
@@ -275,9 +275,18 @@ header label{
 }
 
 /*---------- 480PX ---------*/
-@media (min-width: 480px){
+@media (min-width: 480px) and (max-width: 767px){
+
+	header{
+		display: flex;
+	}
+
+	.contenedor h1, i{
+		font-size: 25px;
+	}
+
 	#banner h2{
-		font-size: 34px;
+		color:  yellow;
 	}
 
 	#banner a{
@@ -286,5 +295,43 @@ header label{
 
 	.info-pet{
 		width: 40%;
+	}
+
+	footer .contenedor{
+		justify-content: space-between;
+	}
+
+	.sociales{
+		width: auto;
+	}
+}
+
+/*---------- 350 px ---------*/
+@media (min-width: 350px) and (max-width: 479px){
+
+	header .contenedor{
+		display: flex;
+		justify-content: space-between;
+
+	}
+
+	.contenedor .fa-dog{
+		font-size: 15px;
+	}
+
+	.contenedor label{
+		
+		overflow: hidden;
+	}
+
+	.contenedor h1, .fa-bars{
+
+		color: aqua;
+		font-size: 20px;
+
+	}
+
+	#banner h2{
+		color: red;
 	}
 }
