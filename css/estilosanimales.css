@@ -231,6 +231,37 @@ header label{
 	}
 }
 
+/*------------------- nuovo ------------------*/
+
+@media (min-width: 480px){
+	.contenedor h1, .contenedor i{
+		font-size: 24px;
+		margin: 5px;
+	}
+}
+/*--------------------------------------------*/
+
+/*------------------- nuovo ------------------*/
+
+@media (min-width: 350px){
+	.contenedor h1, .contenedor i{
+		font-size: 24px;
+		margin: 5px;
+	}
+}
+
+@media (min-width: 350px){
+	#banner h2{
+		font-size: 20px;
+	}
+
+	#banner p{
+		font-size: 12px;
+	}
+
+}
+/*--------------------------------------------*/
+
 @media (min-width: 1024px){
 	.menu{
 		position: static;
@@ -266,10 +297,6 @@ header label{
 	footer .contenedor{
 		display: flex;
 		flex-wrap: nowrap;
-	}
-
-	footer a i{
-		color: red;
 	}
 }
 
@@ -312,6 +339,34 @@ header label{
 		margin-top: -200px;
 	}
 }
+
+/*------------------- nuovo ------------------*/
+@media (min-width:350px){
+
+	footer .contenedor{ /*para que todos esten alineadoi entre p y .sociales*/
+		display: flex;
+		flex-wrap: nowrap;
+	}
+
+	.sociales{/*luego aqui nos permite alinearlos y luego colocarlos en el extremo derecho*/
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	.sociales i{
+		font-size: 16px;
+		padding-bottom: 10px;/* para centrar dentro de a*/
+	}
+
+	.copy{
+		font-size: 18px;
+		width: 100%; /*para que el nombre completo ocupe todo sin saltar a otro linea*/
+	}
+}
+/*--------------------------------------------*/
+
+
 
 
 /*---------- Inizio dei media querie --------- JUNTADO*/
