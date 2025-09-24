@@ -254,6 +254,23 @@ header label{
 	.info-pet{
 		width: 40%;
 	}
+	.sociales{
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.copy{
+		width: 100%;
+	}
+
+	footer .contenedor{
+		display: flex;
+		flex-wrap: nowrap;
+	}
+
+	footer a i{
+		color: red;
+	}
 }
 
 @media (min-width: 1024px){
